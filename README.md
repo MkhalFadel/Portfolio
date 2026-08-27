@@ -5,9 +5,9 @@ My personal portfolio showcasing my projects, skills, and contact info.
 - HTML
 - CSS
 ## Projects
-- Lock-Ledger: PWA for notes and finance tracking (React, mockAPI, Chart.js)
+- StackForge: A modern fullstack scaffolding CLI built with Node.js.
 - ModoUI: Reusable React UI component library (npm package)
-- Dukkan Store: Frontend e-commerce app with admin dashboard (React, mockAPI, ModoUI)
+- MailerJS: A lightweight command-line tool for sending emails through SMTP.
 ## Contact
 - Email: fadel.mokahal@gmail.com
 - GitHub: https://github.com/MkhalFadel
