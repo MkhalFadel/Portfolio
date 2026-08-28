@@ -11,4 +11,4 @@ My personal portfolio showcasing my projects, skills, and contact info.
 ## Contact
 - Email: fadel.mokahal@gmail.com
 - GitHub: https://github.com/MkhalFadel
-- LinkedIn: https://linkedin.com/in/mkhal-fadel-326979364/
+- LinkedIn: https://www.linkedin.com/in/fadel-mkhal-326979364?utm_source=share_via&utm_content=profile&utm_medium=member_android
