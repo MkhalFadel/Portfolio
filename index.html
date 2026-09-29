@@ -3,201 +3,243 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Fadel Mkahal | Portfolio</title>
+   <meta name="description" content="Portfolio of Fadel Mkahal, Computer Science student and full-stack developer." />
+   <title>Fadel Mkahal — Full-stack Developer</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+   <a class="skip-link" href="#main-content">Skip to content</a>
 
-   <!-- NAVBAR -->
-   <header class="navbar">
-      <h1 class="logo">F<span>adel</span>M<span>kahal</span></h1>
-      <nav>
-         <a href="#about">About</a>
-         <a href="#projects">Projects</a>
-         <a href="#skills">Skills</a>
-         <a href="#education">Education</a>
-         <a href="#contact">Contact</a>
-      </nav>
+   <header class="site-header">
+      <div class="nav-wrap">
+         <a class="brand" href="#top" aria-label="Fadel Mkahal — home">
+            <span class="brand-mark">FM</span>
+            <span>Fadel Mkahal</span>
+         </a>
+         <nav class="main-nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+         </nav>
+         <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
    </header>
 
-   <!-- HERO -->
-   <section class="hero">
-      <h2>Hi, I'm <span>Fadel Mkahal</span> 👋</h2>
-      <p class="title">Computer Science Student | Fullstack Developer (React.js/Node.js)</p>
-
-      <p class="tagline">
-         I build responsive, user-focused web applications along side CLI Tools using modern frontend/backend technologies.
-      </p>
-
-      <div class="hero-buttons">
-         <a href="assets/Fadel_Mkahal_CV.pdf" class="btn primary" target="_blank">Download CV</a>
-         <a href="#projects" class="btn">View Projects</a>
-         <a href="#contact" class="btn">Contact Me</a>
-      </div>
-   </section>
-
-   <!-- ABOUT -->
-   <section id="about" class="section">
-      <h3>About Me</h3>
-      <div class="info-card">
-         <p>
-         I’m a second-year Computer Science student and a self-taught fullstack developer
-         with a strong focus on React and Node.js/Express.js. I enjoy building functional, real-world web
-         applications, NPM packages, Contribute to Open Source projects, and build CLI Tools that solve practical problems and improve user experience.
-         </p>
-         <p>
-         I’m currently looking for an internship or junior fullstack developer role
-         where I can grow my skills and contribute to meaningful projects.
-         </p>
-      </div>
-   </section>
-
-   <!-- PROJECTS -->
-   <section id="projects" class="section">
-      <h3>Projects</h3>
-
-      <div class="projects-grid">
-
-         <!-- Lock Ledger -->
-         <div class="project-card">
-         <img src="images/LockLedger-Icon.png" alt="Lock Ledger App" />
-
-         <h4>Lock-Ledger</h4>
-         <p>
-            A Progressive Web App that allows users to manage notes and track income
-            and expenses across devices, with interactive charts to visualize spending.
-         </p>
-
-         <span>React · Chart.js · PWA</span>
-
-         <div class="project-links">
-            <a href="https://mkhalfadel.github.io/Lock-Ledger/" target="_blank">Live Website</a>
-            <a href="https://github.com/MkhalFadel/Lock-Ledger" target="_blank">Code Repository</a>
+   <main id="main-content">
+      <section id="top" class="hero section-shell">
+         <div class="hero-copy">
+            <p class="eyebrow"><span></span> Full-stack developer in progress</p>
+            <h1>Hi, I’m <em>Fadel Mkahal.</em></h1>
+            <p class="hero-role">Computer Science Student <span aria-hidden="true">/</span> Fullstack Developer (React.js/Node.js)</p>
+            <p class="hero-intro">I build responsive, user-focused web applications along side CLI Tools using modern frontend/backend technologies.</p>
+            <div class="hero-actions">
+               <a href="assets/Fadel_Mkahal_CV.pdf" class="button button-fill" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
+               <a href="#projects" class="text-link">View projects <span aria-hidden="true">↘</span></a>
+            </div>
          </div>
+         <aside class="hero-note" aria-label="Areas of focus">
+            <p class="note-label">Currently focused on</p>
+            <ul>
+               <li>Responsive web applications</li>
+               <li>Frontend &amp; backend development</li>
+               <li>Practical CLI tools</li>
+            </ul>
+            <a href="#contact" class="note-contact">Get in touch <span aria-hidden="true">↗</span></a>
+         </aside>
+      </section>
+
+      <section id="about" class="section-shell about-section section-rule">
+         <div class="section-heading">
+            <p class="section-index">01</p>
+            <h2>About me</h2>
+         </div>
+         <div class="about-copy">
+            <p class="large-copy">I’m a third-year Computer Science student and a self-taught fullstack developer with a strong focus on React and Node.js/Express.js.</p>
+            <div class="body-copy">
+               <p>I enjoy building functional, real-world web applications, NPM packages, Contribute to Open Source projects, and build CLI Tools that solve practical problems and improve user experience.</p>
+               <p>I’m currently looking for an internship or junior fullstack developer role where I can grow my skills and contribute to meaningful projects.</p>
+            </div>
+         </div>
+      </section>
+
+      <section id="projects" class="section-shell projects-section section-rule">
+         <div class="section-heading projects-heading">
+            <div>
+               <p class="section-index">02</p>
+               <h2>Selected projects</h2>
+            </div>
+            <p class="section-summary">A few things I’ve built for the web, npm, and the terminal.</p>
          </div>
 
-         <!-- ModoUI -->
-         <div class="project-card">
-         <img src="images/ModoUI.svg" alt="ModoUI Library" />
+         <div class="projects-grid">
+            <article class="project-card">
+               <div class="project-visual visual-lock-ledger">
+                  <img src="images/LockLedger-Icon.png" alt="Lock Ledger app icon" />
+                  <span class="project-number">01</span>
+               </div>
+               <div class="project-content">
+                  <div class="project-title-row">
+                     <h3>Lock-Ledger</h3>
+                     <span class="project-type">PWA</span>
+                  </div>
+                  <p>A Progressive Web App that allows users to manage notes and track income and expenses across devices, with interactive charts to visualize spending.</p>
+                  <p class="project-stack">React <span>·</span> Chart.js <span>·</span> PWA</p>
+                  <div class="project-links">
+                     <a href="https://mkhalfadel.github.io/Lock-Ledger/" target="_blank" rel="noopener">Live website <span aria-hidden="true">↗</span></a>
+                     <a href="https://github.com/MkhalFadel/Lock-Ledger" target="_blank" rel="noopener">Code repository <span aria-hidden="true">↗</span></a>
+                  </div>
+               </div>
+            </article>
 
-         <h4>ModoUI</h4>
-         <p>
-            A reusable React UI component library published on npm, designed to speed up
-            development and ensure consistent UI across projects.
-         </p>
+            <article class="project-card">
+               <div class="project-visual visual-modo">
+                  <img src="images/ModoUI.svg" alt="ModoUI library logo" />
+                  <span class="project-number">02</span>
+               </div>
+               <div class="project-content">
+                  <div class="project-title-row">
+                     <h3>ModoUI</h3>
+                     <span class="project-type">Library</span>
+                  </div>
+                  <p>A reusable React UI component library published on npm, designed to speed up development and ensure consistent UI across projects.</p>
+                  <p class="project-stack">React <span>·</span> npm <span>·</span> Component Architecture</p>
+                  <div class="project-links">
+                     <a href="https://mkhalfadel.github.io/ModoUI/" target="_blank" rel="noopener">Live website <span aria-hidden="true">↗</span></a>
+                     <a href="https://github.com/MkhalFadel/ModoUI" target="_blank" rel="noopener">Code repository <span aria-hidden="true">↗</span></a>
+                  </div>
+               </div>
+            </article>
 
-         <span>React · npm · Component Architecture</span>
+            <article class="project-card">
+               <div class="project-visual visual-mailer">
+                  <img src="images/mailerJsLogo.png" alt="MailerJS logo" />
+                  <span class="project-number">03</span>
+               </div>
+               <div class="project-content">
+                  <div class="project-title-row">
+                     <h3>MailerJs</h3>
+                     <span class="project-type">CLI</span>
+                  </div>
+                  <p>MailerJS-CLI is a CLI tool for sending emails through SMTP. It provides a simple, interactive way to configure your email provider, attach files, and send emails to one or multiple recipients directly from your terminal.</p>
+                  <p class="project-stack">Node.js <span>·</span> NPM</p>
+                  <div class="project-links">
+                     <a href="https://www.npmjs.com/package/mailerjs-cli" target="_blank" rel="noopener">NPM link <span aria-hidden="true">↗</span></a>
+                     <a href="https://github.com/MkhalFadel/MailerJS-CLI" target="_blank" rel="noopener">Code repository <span aria-hidden="true">↗</span></a>
+                  </div>
+               </div>
+            </article>
 
-         <div class="project-links">
-            <a href="https://mkhalfadel.github.io/ModoUI/" target="_blank">Live Website</a>
-            <a href="https://github.com/MkhalFadel/ModoUI" target="_blank">Code Repository</a>
+            <article class="project-card">
+               <div class="project-visual visual-stackforge">
+                  <img src="images/stackForgeLogo.png" alt="StackForge logo" />
+                  <span class="project-number">04</span>
+               </div>
+               <div class="project-content">
+                  <div class="project-title-row">
+                     <h3>StackForge</h3>
+                     <span class="project-type">CLI</span>
+                  </div>
+                  <p>A modern fullstack project scaffolding CLI built with Node.js that automates the setup of frontend, backend, and fullstack applications by generating production-ready project structures with optional features like authentication, database support, Tailwind CSS, Prisma ORM, and more. Designed to improve developer workflow and eliminate repetitive project setup tasks.</p>
+                  <p class="project-stack">Node.js <span>·</span> NPM</p>
+                  <div class="project-links">
+                     <a href="https://www.npmjs.com/package/create-stackforge-cli" target="_blank" rel="noopener">NPM link <span aria-hidden="true">↗</span></a>
+                     <a href="https://github.com/MkhalFadel/stackforge" target="_blank" rel="noopener">Code repository <span aria-hidden="true">↗</span></a>
+                  </div>
+               </div>
+            </article>
          </div>
+      </section>
+
+      <section id="skills" class="section-shell skills-section section-rule">
+         <div class="section-heading">
+            <p class="section-index">03</p>
+            <h2>Tools &amp; skills</h2>
          </div>
-
-         <!-- Dukkan Store -->
-         <div class="project-card">
-         <img src="images/mailerJsLogo.png" alt="Dukkan Store" />
-
-         <h4>MailerJs</h4>
-         <p>
-            MailerJS-CLI is a CLI tool for sending emails through SMTP. It provides a simple, interactive way to configure your email provider, attach files, and send emails to one or multiple recipients directly from your terminal.
-
-         </p>
-
-         <span>Node.js · NPM</span>
-
-         <div class="project-links">
-            <a href="https://www.npmjs.com/package/mailerjs-cli" target="_blank">NPM Link</a>
-            <a href="https://github.com/MkhalFadel/MailerJS-CLI" target="_blank">Code Repository</a>
+         <div class="skills-grid" aria-label="Technical skills">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>SQL(MySQL/PostegreSQL)</span>
+            <span>Postman</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>REST APIs</span>
+            <span>CLIs</span>
+            <span>Linux</span>
+            <span>Redis</span>
+            <span>Jira</span>
+            <span>Notion</span>
          </div>
+      </section>
+
+      <section id="education" class="section-shell education-section section-rule">
+         <div class="section-heading">
+            <p class="section-index">04</p>
+            <h2>Education</h2>
          </div>
-
-      </div>
-         <div class="project-card" style="margin-top: 25px;">
-         <img src="images/stackForgeLogo.png" alt="StackForge" />
-
-         <h4>StackForge</h4>
-         <p>
-            A modern fullstack project scaffolding CLI built with Node.js that automates the setup of frontend, backend, and fullstack applications by generating production-ready project structures with optional features like authentication, database support, Tailwind CSS, Prisma ORM, and more.
-            Designed to improve developer workflow and eliminate repetitive project setup tasks.      
-         </p>
-
-         <span>Node.js · NPM</span>
-
-         <div class="project-links">
-            <a href="https://www.npmjs.com/package/create-stackforge-cli" target="_blank">NPM Link</a>
-            <a href="https://github.com/MkhalFadel/stackforge" target="_blank">Code Repository</a>
+         <div class="education-card">
+            <div class="education-title">
+               <p class="mono-label">Degree</p>
+               <p>Computer Science Student, <a href="assets/CS50 Certificate.pdf" target="_blank" rel="noopener">Harvard’s CS50x <span aria-hidden="true">↗</span></a></p>
+            </div>
+            <div>
+               <p class="mono-label">University</p>
+               <p>AUCE - American University of Culture and Education</p>
+            </div>
+            <div>
+               <p class="mono-label">Expected graduation</p>
+               <p>3rd Year — 2027</p>
+            </div>
          </div>
+      </section>
+
+      <section class="section-shell resume-section section-rule" aria-labelledby="resume-title">
+         <div>
+            <p class="section-index">05</p>
+            <h2 id="resume-title">Resume</h2>
          </div>
-
-      </div>
-   </section>
-
-   <!-- SKILLS -->
-   <section id="skills" class="section">
-      <h3>Skills</h3>
-      <div class="skills-grid">
-         <span>JavaScript</span>
-         <span>HTML</span>
-         <span>CSS</span>
-         <span>React</span>
-         <span>Node.js</span>
-         <span>Express.js</span>
-         <span>SQL(MySQL/PostegreSQL)</span>
-         <span>Postman</span>
-         <span>Git</span>
-         <span>GitHub</span>
-         <span>REST APIs</span>
-         <span>CLIs</span>
-      </div>
-   </section>
-
-   <!-- EDUCATION -->
-   <section id="education" class="section">
-      <h3>Education</h3>
-      <div class="education-card">
-         <p><strong>Degree:</strong> Computer Science Student, <a style="color: #38bdf8;" href="/assets/CS50 Certificate.pdf" target="_blank">Harvard's CS50x</a></p>
-         <p><strong>University:</strong> AUCE - American University of Culture and Education</p>
-         <p><strong>Year:</strong> 2nd Year — Expected Graduation: 2027</p>
-      </div>
-   </section>
-
-   <!-- RESUME -->
-   <section class="section">
-      <h3>Resume</h3>
-      <div class="resume-box">
-         <p>Download My Resume</p>
-         <a href="assets/Fadel_Mkahal_CV.pdf" class="btn primary" target="_blank">Download CV</a>
-      </div>
-   </section>
-
-   <!-- CONTACT -->
-   <section id="contact" class="section">
-      <h3>Contact</h3>
-      <div class="contact-grid">
-         <div class="contact-item">
-         <strong>Email</strong>
-         <p><a href="mailto:fadel.mokahal@gmail.com">fadel.mokahal@gmail.com</a></p>
+         <div class="resume-content">
+            <p>Download My Resume</p>
+            <a href="assets/Fadel_Mkahal_CV.pdf" class="button button-outline" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
          </div>
+      </section>
 
-         <div class="contact-item">
-         <strong>GitHub</strong>
-         <p><a href="https://github.com/MkhalFadel" target="_blank">github.com/MkhalFadel</a></p>
+      <section id="contact" class="contact-section">
+         <div class="contact-inner section-shell">
+            <p class="section-index">06</p>
+            <p class="eyebrow light-eyebrow"><span></span> Get in touch</p>
+            <h2>Let’s build something <em>meaningful.</em></h2>
+            <div class="contact-grid">
+               <a class="contact-link" href="mailto:fadel.mokahal@gmail.com">
+                  <span>Email</span>
+                  <strong>fadel.mokahal@gmail.com</strong>
+                  <i aria-hidden="true">↗</i>
+               </a>
+               <a class="contact-link" href="https://github.com/MkhalFadel" target="_blank" rel="noopener">
+                  <span>GitHub</span>
+                  <strong>github.com/MkhalFadel</strong>
+                  <i aria-hidden="true">↗</i>
+               </a>
+               <a class="contact-link" href="https://www.linkedin.com/in/fadel-mkhal-326979364/" target="_blank" rel="noopener">
+                  <span>LinkedIn</span>
+                  <strong>linkedin.com/in/fadel-mkhal</strong>
+                  <i aria-hidden="true">↗</i>
+               </a>
+            </div>
          </div>
+      </section>
+   </main>
 
-         <div class="contact-item">
-         <strong>LinkedIn</strong>
-         <p><a href="https://www.linkedin.com/in/fadel-mkhal-326979364/" target="_blank">
-            linkedin.com/in/fadel-mkhal
-         </a></p>
-         </div>
-      </div>
-   </section>
-
-   <!-- FOOTER -->
-   <footer class="footer">
+   <footer class="site-footer">
       <p>© 2026 Fadel Mkahal</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
    </footer>
-
 </body>
 </html>
